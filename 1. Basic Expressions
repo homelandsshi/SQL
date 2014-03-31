@@ -1,3 +1,4 @@
+I. Expression & Conditions
 SELECT column1, column2, ...
 FROM table
 WHERE columnname = name;
@@ -14,7 +15,9 @@ WHERE columnname = name;
 		d. AND, OR, NOT
 		e. IN( , ... , )
 		f. BETWEEN ... AND ...
-		
+
+
+II. Operators
 UNION, UNION ALL, INTERSECT, MINUS
 
 SELECT column FROM table1
