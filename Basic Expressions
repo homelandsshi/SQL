@@ -11,3 +11,12 @@ WHERE columnname = name;
 		a. is null
 		b. <, >, !=
 		c. LIKE: %, _
+		d. AND, OR, NOT
+		e. IN( , ... , )
+		f. BETWEEN ... AND ...
+		
+UNION, UNION ALL, INTERSECT, MINUS
+
+SELECT column FROM table1
+UNION
+SELECT column FROM table2;
