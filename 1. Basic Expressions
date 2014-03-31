@@ -15,7 +15,7 @@ WHERE columnname = name;
 		d. AND, OR, NOT
 		e. IN( , ... , )
 		f. BETWEEN ... AND ...
-
+	3. SELECT DISTINCT
 
 II. Operators
 UNION, UNION ALL, INTERSECT, MINUS
