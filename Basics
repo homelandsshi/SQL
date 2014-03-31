@@ -1,0 +1,13 @@
+SELECT column1, column2, ...
+FROM table
+WHERE columnname = name;
+	1. about SELECT
+		a. column + number
+		b. (column + number) newcolumn
+		c. column + number newcolumn
+		d. -, *, /
+		e. column1 || column2 newcolumn
+	2. about WHERE
+		a. is null
+		b. <, >, !=
+		c. LIKE: %, _
