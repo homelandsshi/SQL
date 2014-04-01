@@ -1,0 +1,32 @@
+I. Build a subquery	// can be nested or self contained
+SELECT columns
+FROM table1
+WHERE column1 =
+(SELECT column2		// must be unique
+FROM table2
+WHERE ...);
+
+II. 
+1. Exists
+SELECT columns
+FROM table
+WHERE EXISTS
+(SELECT ...
+FROM ...
+WHERE ...);
+
+2. ANY
+SELECT columns
+FROM table
+WHERE column > ANY	// SOME same, = ANY/SOME same as IN
+(SELECT column
+FROM ...
+WHERE...);
+
+3. ALL
+SELECT columns
+FROM table
+WHERE column <> ALL	
+(SELECT column
+FROM ...
+WHERE...);
