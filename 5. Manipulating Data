@@ -1,0 +1,19 @@
+I. INSERT, UPDATE, DELETE
+1. INSERT
+INSERT INTO table (col1, ...)
+VALUES (val1, ...),
+(val, ...), ...;
+
+INSERT INTO table1
+SELECT ...
+FROM table2
+WHERE ...;
+
+2. UPDATE
+UPDATE table
+SET col1 = val1, ...
+WHERE ...;
+
+3. DELETE
+DELETE FROM table
+WHERE ...;
