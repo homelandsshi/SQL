@@ -1,6 +1,6 @@
 I. INSERT, UPDATE, DELETE
 1. INSERT
-INSERT INTO table (col1, ...)
+INSERT INTO table (col1, ...) // (col1, ...) not necessary
 VALUES (val1, ...),
 (val, ...), ...;
 
