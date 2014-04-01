@@ -7,7 +7,7 @@ WHERE columnname = name;
 		b. (column + number) newcolumn
 		c. column + number newcolumn
 		d. -, *, /, %
-		e. column1 || column2 newcolumn
+		e. column1 || column2 newcolumn	// same as CONCAT
 	2. about WHERE
 		a. is null
 		b. <, >, !=
