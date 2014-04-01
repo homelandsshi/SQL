@@ -6,7 +6,7 @@ WHERE columnname = name;
 		a. column + number
 		b. (column + number) newcolumn
 		c. column + number newcolumn
-		d. -, *, /
+		d. -, *, /, %
 		e. column1 || column2 newcolumn
 	2. about WHERE
 		a. is null
