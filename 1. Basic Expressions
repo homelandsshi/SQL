@@ -11,7 +11,7 @@ WHERE columnname = name;
 	2. about WHERE
 		a. is null
 		b. <, >, !=
-		c. LIKE: %, _
+		c. LIKE: %, _	// STARTING WITH
 		d. AND, OR, NOT
 		e. IN( , ... , )
 		f. BETWEEN ... AND ...
