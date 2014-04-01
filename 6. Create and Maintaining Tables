@@ -7,8 +7,9 @@ col1 datatype1,
 col2 datatype2,
 ...);
 	1. about datatype
-		a. can add NOT NULL after that
-		b. common datatypes:
+		a. can add NOT NULL after that	// NULL value not permitted
+		b. can add UNIQUE after that	// duplicates not permitted
+		c. common datatypes:
 			Char(n), Varchar(n), Int, Float		// MySQL
 			Char(n), Varchar(n), Number, Number	// Oracle
 			
