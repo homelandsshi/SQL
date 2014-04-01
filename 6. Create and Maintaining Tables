@@ -1,0 +1,36 @@
+I. Create database
+CREATE DATABASE db;
+
+II. Create table
+CREATE TABLE tb (
+col1 datatype1,
+col2 datatype2,
+...);
+	1. about datatype
+		a. can add NOT NULL after that
+		b. common datatypes:
+			Char(n), Varchar(n), Int, Float		// MySQL
+			Char(n), Varchar(n), Number, Number	// Oracle
+			
+III. Create new table from table
+CREATE TABLE ntb (col1, ...)
+AS (SELECT col1, ...
+FROM otb
+WHERE ...);
+
+IV. ALTER TABLE
+ALTER TABLE tb
+ADD col datatype;
+
+ALTER TABLE tb
+MODIFY col new_datatype;
+	1. from NOT NULL to NULL, just add NULL
+	2. from NULL to NOT NULL
+		a. find if there's NULL value
+		b. deal with it: delete it or update it
+		c. issue ALTER TABLE command
+		
+V. DROP TABLE/DATABASE
+DROP TABLE tb;
+DROP DATABASE db;
+TRUNCATE TABLE tb;	// only delete data, but not table
