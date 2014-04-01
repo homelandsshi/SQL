@@ -1,0 +1,26 @@
+I. Views - virtual table	
+CREATE VIEW vw (col1, ...) AS
+SELECT (col1, ...)
+FROM tb
+WHERE ...;
+	1. similar as table, but when values in table change, values in view change too
+	2. can create view from view
+	3. can not use UNION
+	4. can not use ORDER BY, but can use GROUP BY
+	5. can INSERT, UPDATE, DELETE, but with restrictions
+	6. can DROP VIEW
+	
+Ex.
+CREATE VIEW envelope (company, mailing_address) AS
+SELECT name, address + " " + city + ", " + state
+FROM company;
+
+II. Index
+CREATE INDEX i
+ON tb (col1, ...);
+	1. compared with ORDER BY, index doesn't really sort the table
+	2. can CREATE UNIQUE INDEX i	// can't insert a value with same index
+	3. after col, can add DESC
+	4. can DROP INDEX
+	5. maybe can CREATE UNIQUE CLUSTERED INDEX i
+	
