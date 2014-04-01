@@ -1,0 +1,31 @@
+I. Aggregate functions: 
+COUNT, SUM, AVG, MAX, MIN, VARIANCE, STDDEV
+
+SELECT COUNT(column) newcolumn
+FROM table 
+WHERE ...;
+
+
+II. Date and Time functions:
+ADD_MONTHS(column, n), LASTDAY(column), MONTHS_BETWEEN(ENDDATE, STARTDATE), NEW_TIME(column, zone1, zone2)
+NEXT_DAY(date, 'FRIDAY'), SYSDATE
+
+
+III. Arithmetric functions: f(column)
+SIGN, ABS, CEIL, FLOOR, COS, COSH, SIN, SINH, TAN, TANH, SQRT, EXP, LN, LOG(column, n), MOD(column1, column2)
+POW(column1, column2)	// if negative number in column1, column2 has to be integer, use CEIL or FLOOR
+
+
+IV. Characer functions: f(column)
+CHR, INITCAP, LOWER, UPPER, LENGTH
+CONCAT(column1, column2), SUBSTR(column, n1, n2)
+LPAD(column, n, '*'), RPAD, LTRIM(column, 'c'), RTRIM, REPLACE(column, 'ab', 'cd')
+TRANSLATE(column, 'abcd','efgh')
+
+V. Conversion functions: f(column)
+TO_CHAR, TO_NUMBER
+
+VI. Miscellaneous functions
+GREATEST, LEAST, USER
+
+
