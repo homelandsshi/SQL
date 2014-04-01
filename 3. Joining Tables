@@ -1,3 +1,9 @@
+I. Equi-join and non-equi-join
+SELECT A.col1, ..., B.col2, ..., C.col3, ...
+FROM ta A, tb B, tc C
+WHERE ...
+
+II. Join without producing duplicate columns
 JOIN		// INNER JOIN
 LEFT JOIN	// LEFT OUTER JOIN
 RIGHT JOIN  // RIGHT OUTER JOIN
