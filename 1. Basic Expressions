@@ -1,13 +1,15 @@
 I. Expression & Conditions
 SELECT column1, column2, ...
 FROM table
-WHERE columnname = name;
+WHERE column = name
+ORDER BY column;
 	1. about SELECT
 		a. column + number
 		b. (column + number) newcolumn
 		c. column + number newcolumn
 		d. -, *, /, %
 		e. column1 || column2 newcolumn	// same as CONCAT
+		f. can't work with Aggregate functions	// use HAVING instead
 	2. about WHERE
 		a. is null
 		b. <, >, !=
@@ -16,6 +18,7 @@ WHERE columnname = name;
 		e. IN( , ... , )
 		f. BETWEEN ... AND ...
 	3. SELECT DISTINCT
+	4. about ORDER BY: ASC, DESC
 
 II. Operators
 UNION, UNION ALL, INTERSECT, MINUS
