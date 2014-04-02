@@ -23,7 +23,10 @@ ORDER BY column;
 	4. about ORDER BY: ASC, DESC
 
 II. Operators
-UNION, UNION ALL, INTERSECT, MINUS
+UNION		// no duplicate result
+UNION ALL	// with duplicate results
+INTERSECT	
+MINUS
 
 SELECT column FROM table1
 UNION
