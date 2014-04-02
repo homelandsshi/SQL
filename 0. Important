@@ -1,0 +1,33 @@
+1. OUTER JOIN, INNER JOIN, LEFT JOIN, RIGHT JOIN
+
+SELECT column_name(s)
+FROM table1
+[INNER] JOIN table2
+ON table1.column_name=table2.column_name;
+
+SELECT column_name(s)
+FROM table1
+LEFT [OUTER] JOIN table2
+ON table1.column_name=table2.column_name;
+
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name=table2.column_name;
+
+2. UNION ALL
+SELECT column_name(s) FROM table1
+UNION ALL
+SELECT column_name(s) FROM table2;
+
+3. Aggregate functions:
+COUNT, SUM, AVG, MAX, MIN, VARIANCE, STDDEV
+
+SELECT COUNT(column) newcolumn
+FROM tb 
+WHERE ...;
+
+4. Random Sampling
+SELECT ...
+FROM tb
+ORDER BY RAND() LIMIT n
