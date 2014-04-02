@@ -9,14 +9,16 @@ ORDER BY column;
 		c. column + number newcolumn
 		d. -, *, /, %
 		e. column1 || column2 newcolumn	// same as CONCAT
-		f. can't work with Aggregate functions	// use HAVING instead
+		f. SELECT TOP n [PERCENT]
 	2. about WHERE
-		a. is null
+		a. ISNULL	// IFNULL(col, 0) MySQL
+				// NVL(col, 0)    Oracle
 		b. <, >, !=
-		c. LIKE: %, _	// STARTING WITH
+		c. LIKE: %, _, [charlist]	// wildcards, can be used with STARTING WITH
 		d. AND, OR, NOT
 		e. IN( , ... , )
 		f. BETWEEN ... AND ...
+		g. can't work with Aggregate functions	// use HAVING instead
 	3. SELECT DISTINCT
 	4. about ORDER BY: ASC, DESC
 
