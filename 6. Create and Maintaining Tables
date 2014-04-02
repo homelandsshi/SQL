@@ -6,12 +6,19 @@ CREATE TABLE tb (
 col1 datatype1,
 col2 datatype2,
 ...);
-	1. about datatype
-		a. can add NOT NULL after that	// NULL value not permitted
-		b. can add UNIQUE after that	// duplicates not permitted
-		c. common datatypes:
-			Char(n), Varchar(n), Int, Float		// MySQL
-			Char(n), Varchar(n), Number, Number	// Oracle
+	1. things can be added after datatype
+		a. NOT NULL 	// NULL value not permitted
+		b. UNIQUE 	// duplicates not permitted
+		c. PRIMARY KEY  // NOT NULL and UNIQUE, MySQL: PRIMARY(col) in new line
+		d. FOREIGN KEY REFERENCES tb(col) 	// MySQL: FOREIGN KEY(col) REFERENCES tb(col) in new line
+		e. CHECK (...) 	// MySQL: CHECK (...) in new line
+		f. DEFAULT val
+		g. AUTO_INCREMENT[=startval]	// only for MySQL
+	2. for UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK
+		CONSTRAINT newcol UNIQUE (col1, col2, ...)
+	3. common datatypes:
+		Char(n), Varchar(n), Int, Float		// MySQL
+		Char(n), Varchar(n), Number, Number	// Oracle
 			
 III. Create new table from table
 CREATE TABLE ntb (col1, ...)
@@ -19,17 +26,29 @@ AS (SELECT col1, ...
 FROM otb
 WHERE ...);
 
+IV. SELECT INT
+SELECT (col1, ...)
+INTO newtb [IN externaldb]
+FROM tb;
+
 IV. ALTER TABLE
 ALTER TABLE tb
 ADD col datatype;
 
 ALTER TABLE tb
-MODIFY col new_datatype;
+MODIFY COLUMN col new_datatype;
+
+ALTER TABLE tb
+DROP COLUMN col;
+
 	1. from NOT NULL to NULL, just add NULL
 	2. from NULL to NOT NULL
 		a. find if there's NULL value
 		b. deal with it: delete it or update it
 		c. issue ALTER TABLE command
+	3. can ADD or DROP: UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK
+	4. for DEFAULT: MODIFY col DEFAULT val		// Oracle
+			ALTER col SET DEFAULT val	// My SQL
 		
 V. DROP TABLE/DATABASE
 DROP TABLE tb;
