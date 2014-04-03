@@ -26,7 +26,7 @@ AS (SELECT col1, ...
 FROM otb
 WHERE ...);
 
-IV. SELECT INT
+IV. SELECT INTO
 SELECT (col1, ...)
 INTO newtb [IN externaldb]
 FROM tb;
